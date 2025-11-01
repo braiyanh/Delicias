@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Semanal - Restaurante Delicioso</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Restaurante Delicioso</h1>
+        <p>Menú Semanal - Comida Casera y Bebidas Refrescantes</p>
+    </header>
+
+<main>
+    <!-- SLIDER DE IMÁGENES -->
+<!-- SLIDER FULL WIDTH -->
+<div class="slider-fullwidth">
+    <div class="slider">
+        <div class="slide"><img src="https://www.recetasnestlecam.com/sites/default/files/srh_recipes/07892f02f7c57b83d5703b4ee924221e.jpg" alt="Pizza"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=1920" alt="Tacos"></div>
+        <div class="slide"><img src="https://st1.uvnimg.com/af/e1/34c8d9f843b4a2d51fcd42a691d1/comida-mexicana.jpg" alt="Hamburguesa"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1920" alt="Sushi"></div>
+    </div>
+
+    <!-- FLECHAS -->
+    <button class="slider-btn prev" onclick="cambiarSlide(-1)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="slider-btn next" onclick="cambiarSlide(1)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <!-- PUNTOS -->
+    <div class="slider-dots">
+        <span class="dot active" onclick="irASlide(0)"></span>
+        <span class="dot" onclick="irASlide(1)"></span>
+        <span class="dot" onclick="irASlide(2)"></span>
+        <span class="dot" onclick="irASlide(3)"></span>
+        <span class="dot" onclick="irASlide(4)"></span>
+
+    </div>
+</div>
+
+
+
+
+    <!-- === MENÚ SEMANAL (ACORDEÓN PRINCIPAL) === -->
+     <h2 class="title-glow weekly">Menú </h2>
+
+
+    <section class="menu-principal">
+        <button class="menu-toggle" aria-expanded="false">
+            <h2>Menú Semanal</h2>
+           <span class="arrow">D</span>
+        </button>
+
+        <div class="menu-content">
+            <div class="acordeon">
+
+ <!-- Martes -->
+                <div class="acordeon-item">
+                    <button class="acordeon-header" aria-expanded="false">
+                        <h3>Martes</h3>
+                       <span class="arrow">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+</span>
+                    </button>
+                    <div class="acordeon-content">
+                        <div class="dia">
+    <div class="plato">
+        <img src="img/image.jpg" alt="Pechuga a la Plancha">
+        <div class="info">
+            <div class="nombre">Pechuga a la Plancha con Arroz</div>
+            <div class="descripcion">Pechuga jugosa, arroz blanco, ensalada y salsa de la casa.</div>
+            <div class="precio">$12.90</div>
+
+ <div class="agregar-carrito" data-nombre="Pechuga jugosa, arroz blanco" data-precio="12.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+    </div>
+    </div>
+</div>
+
+    <div class="plato">
+        <img src="img/2.jpg" alt="Sopa de Verduras">
+        <div class="info">
+            <div class="nombre">Sopa de Verduras</div>
+            <div class="descripcion">Caldo casero con zanahoria, apio, calabacín y papa.</div>
+            <div class="precio">$7.50</div>
+
+            <div class="agregar-carrito" data-nombre="Caldo casero con zanahoria, apio, calabacín y papa "data-precio="7.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+    </div>
+</div>
+              </div>     
+                </div>
+  </div>
+
+                <!-- Martes -->
+                <div class="acordeon-item">
+                    <button class="acordeon-header" aria-expanded="false">
+                        <h3>Martes</h3>
+                       <span class="arrow">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+</span>
+                    </button>
+                    <div class="acordeon-content">
+                        <div class="dia">
+    <div class="plato">
+        <img src="img/3.jpg" alt="Tacos de Carne Asada">
+        <div class="info">
+            <div class="nombre">Tacos de Carne Asada (3 und)</div>
+            <div class="descripcion">Tortilla de maíz, carne asada, cebolla, cilantro y limón.</div>
+            <div class="precio">$11.50</div>
+
+                  <div class="agregar-carrito" data-nombre="Tortilla de maíz, carne asada" data-precio="11.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+         </div>
+    </div>
+    <div class="plato">
+        <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ensalada con Atún">
+        <div class="info">
+            <div class="nombre">Ensalada Mixta con Atún</div>
+            <div class="descripcion">Lechuga, tomate, pepino, atún, huevo duro y aderezo.</div>
+            <div class="precio">$9.90</div>
+
+                            <div class="agregar-carrito" data-nombre="Ensalada Mixta con Atún" data-precio="9.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+
+                <!-- Miércoles -->
+                <div class="acordeon-item">
+                    <button class="acordeon-header" aria-expanded="false">
+                        <h3>Miércoles</h3>
+                        <span class="arrow">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+</span>
+                    </button>
+                    <div class="acordeon-content">
+                        <div class="dia">
+    <div class="plato">
+        <img src="img/11.jpg" alt="Pasta con Pollo">
+        <div class="info">
+            <div class="nombre">Pasta con Pollo y Champiñones</div>
+            <div class="descripcion">Spaghetti en salsa cremosa con pollo y champiñones frescos.</div>
+            <div class="precio">$13.90</div>
+
+                                 <div class="agregar-carrito" data-nombre="Pasta con Pollo y Champiñones" data-precio="13.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+        </div>
+    </div>
+    <div class="plato">
+        <img src="img/12.jpg" alt="Pescado Frito">
+        <div class="info">
+            <div class="nombre">Pescado Frito con Papas</div>
+            <div class="descripcion">Filete empanizado, papas fritas y ensalada de col.</div>
+            <div class="precio">$14.50</div>
+
+                                 <div class="agregar-carrito" data-nombre="Pescado Frito con Papas" data-precio="14.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+
+                <!-- Jueves -->
+                <div class="acordeon-item">
+                    <button class="acordeon-header" aria-expanded="false">
+                        <h3>Jueves</h3>
+                        <span class="arrow">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+</span>
+                    </button>
+                    <div class="acordeon-content">
+                        <div class="dia">
+                            <div class="plato">
+                                <img src="img/16.jpg" alt="Hamburguesa Clásica">
+                                <div class="info">
+                                    <div class="nombre">Hamburguesa Clásica</div>
+                                    <div class="descripcion">Carne 100% res, queso cheddar, lechuga, tomate y papas fritas.</div>
+                                    <div class="precio">$13.90</div>
+
+                                                <div class="agregar-carrito" data-nombre="Hamburguesa Clásica" data-precio="13.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+                                </div>
+                            </div>
+                            <div class="plato">
+                                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Arroz con Pollo">
+                                <div class="info">
+                                    <div class="nombre">Arroz con Pollo</div>
+                                    <div class="descripcion">Arroz amarillo, pollo desmechado, verduras y especias.</div>
+                                    <div class="precio">$10.50</div>
+
+                                    <div class="agregar-carrito" data-nombre="Arroz con Pollo" data-precio="10.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Viernes -->
+                <div class="acordeon-item">
+                    <button class="acordeon-header" aria-expanded="false">
+                        <h3>Viernes</h3>
+                        <span class="arrow">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+</span>
+                        
+                    </button>
+                    <div class="acordeon-content">
+                       <div class="dia">
+    <div class="plato">
+        <img src="img/14.jpg" alt="Milanesa de Res">
+        <div class="info">
+            <div class="nombre">Milanesa de Res con Puré</div>
+            <div class="descripcion">Milanesa crujiente, puré de papa cremoso y ensalada.</div>
+            <div class="precio">$15.90</div>
+
+                                 <div class="agregar-carrito" data-nombre="Milanesa de Res con Puré" data-precio="15.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+        </div>
+    </div>
+    <div class="plato">
+        <img src="img/15.jpg" alt="Tortilla de Papas">
+        <div class="info">
+            <div class="nombre">Tortilla de Papas</div>
+            <div class="descripcion">Huevo, papa, cebolla. Servida con pan y ensalada.</div>
+            <div class="precio">$8.90</div>
+
+                                 <div class="agregar-carrito" data-nombre="Tortilla de Papas" data-precio="8.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+
+                <!-- Sábado -->
+                <div class="acordeon-item">
+                    <button class="acordeon-header" aria-expanded="false">
+                        <h3>Sábado</h3>
+                        <span class="arrow">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+</span>
+                    </button>
+                    <div class="acordeon-content">
+                        <div class="dia">
+
+    <div class="plato">
+        <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sushi Roll California">
+        <div class="info">
+            <div class="nombre">Sushi Roll California (8 pzs)</div>
+            <div class="descripcion">Cangrejo, aguacate, pepino, arroz y alga. Con wasabi.</div>
+            <div class="precio">$16.90</div>
+
+             <div class="agregar-carrito" data-nombre="Sushi Roll California" data-precio="16.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+        </div>
+    </div>
+    <div class="plato">
+        <img src="img/17.jpg" alt="Lasaña de Carne">
+        <div class="info">
+            <div class="nombre">Lasaña de Carne</div>
+            <div class="descripcion">Capas de pasta, carne molida, bechamel y queso gratinado.</div>
+            <div class="precio">$13.90</div>
+
+             <div class="agregar-carrito" data-nombre="Lasaña de Carne" data-precio="13.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+
+                <!-- Domingo -->
+                <div class="acordeon-item">
+                    <button class="acordeon-header" aria-expanded="false">
+                        <h3>Domingo</h3>
+                        <span class="arrow">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+</span>
+                    </button>
+                    <div class="acordeon-content">
+                        <div class="dia">
+    <div class="plato">
+        <img src="img/19.jpg" alt="Parrillada para 2">
+        <div class="info">
+            <div class="nombre">Parrillada para 2</div>
+            <div class="descripcion">Carne, chorizo, morcilla, pollo, papas y chimichurri.</div>
+            <div class="precio">$32.90</div>
+
+            <div class="agregar-carrito" data-nombre="Parrillada" data-precio="32.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+        </div>
+    </div>
+    <div class="plato">
+        <img src="img/18.jpg" alt="Ceviche de Camarón">
+        <div class="info">
+            <div class="nombre">Ceviche de Camarón</div>
+            <div class="descripcion">Camarón fresco, limón, cilantro, cebolla y ají. Con camote.</div>
+            <div class="precio">$16.50</div>
+
+            
+            <div class="agregar-carrito" data-nombre="Ceviche de Camarón" data-precio="16.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <!-- === BOTÓN: GUISADOS RÁPIDOS === -->
+<section class="rapidos-section">
+    <button class="rapidos-toggle" aria-expanded="false">
+        <h2>Guisados para Preparar al Momento</h2>
+        <span class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </span>
+    </button>
+
+    <div class="rapidos-content">
+        <div class="rapidos-grid">
+
+            <!-- 1 -->
+            <div class="rapido-card">
+                <div class="rapido-titulo">Tacos al Pastor (3 und)</div>
+                <div class="rapido-tiempo">Tienpo estimado 10 min</div>
+                <div class="rapido-descripcion">Carne marinada, piña asada, cebolla y cilantro.</div>
+                <div class="rapido-precio">$10.90</div>
+
+                 <div class="agregar-carrito" data-nombre="Tacos al Pastor (3 und)" data-precio ="10.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+                
+            </div>
+
+            <!-- 2 -->
+            <div class="rapido-card">
+                <div class="rapido-titulo">Ensalada César con Pollo</div>
+                <div class="rapido-tiempo">Tienpo estimado 8 min</div>
+                <div class="rapido-descripcion">Lechuga fresca, pollo a la plancha, parmesano y aderezo.</div>
+                <div class="rapido-precio">$9.50</div>
+
+                 <div class="agregar-carrito" data-nombre="Ensalada César con Pollo" data-precio="9.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="rapido-card">
+                <div class="rapido-titulo">Mollete con frijoles y chorizo</div>
+                <div class="rapido-tiempo">Tienpo estimado 12 min</div>
+                <div class="rapido-descripcion">Bollo abierto, frijoles refritos, chorizo desmoronado, queso gratinado, pico de gallo encima.</div>
+                <div class="rapido-precio">$7.50</div>
+
+                 <div class="agregar-carrito" data-nombre="Mollete con frijoles y chorizo" data-precio="7.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="rapido-card">
+                <div class="rapido-titulo">Torta de chilaquiles</div>
+                <div class="rapido-tiempo">Tienpo estimado15 min</div>
+                <div class="rapido-descripcion">chilaquiles con pollo deshebrado, crema, queso fresco y cebolla.</div>
+                <div class="rapido-precio">$10.50</div>
+
+                 <div class="agregar-carrito" data-nombre="Torta de chilaquiles" data-precio="$10.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="rapido-card">
+                <div class="rapido-titulo">Hot do</div>
+                <div class="rapido-tiempo">Tienpo estimado 14 min</div>
+                <div class="rapido-descripcion">Pan de hot dog, salchicha envuelta en tocino, frijoles, jitomate, cebolla, mayonesa y mostaza.</div>
+                <div class="rapido-precio">$14.50</div>
+
+                 <div class="agregar-carrito" data-nombre="Hot do" data-precio="14.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="rapido-card">
+                <div class="rapido-titulo">Empanada de queso</div>
+                <div class="rapido-tiempo">Tienpo estimado 12 min</div>
+                <div class="rapido-descripcion">Masa frita, rellena de queso derretido.</div>
+                <div class="rapido-precio">$13.90</div>
+
+                 <div class="agregar-carrito" data-nombre="Empanada de queso" data-precio="13.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+    
+
+
+
+    <!-- Bebidas y Postres (siempre visibles) -->
+    <!-- ... (tu sección de bebidas y postres aquí) ... -->
+<!-- === BOTÓN: BEBIDAS === -->
+<section class="bebidas-section">
+    <button class="bebidas-toggle" aria-expanded="false">
+        <h2>Nuestra Carta de Bebidas</h2>
+        <span class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </span>
+    </button>
+
+    <div class="bebidas-content">
+        <div class="bebidas-grid">
+            <!-- 10 Bebidas -->
+            <div class="bebida-card">
+                <img src="img/6.jpg" alt="Agua Mineral">
+                <div class="bebida-nombre">Agua Mineral</div>
+                <div class="bebida-precio">$2.50</div>
+
+                  <div class="agregar-carrito" data-nombre="Agua Mineral" data-precio="2.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <div class="bebida-card">
+                <img src="img/7.jpg" alt="Limonada Natural">
+                <div class="bebida-nombre">Limonada Natural</div>
+                <div class="bebida-precio">$3.90</div>
+
+                <div class="agregar-carrito" data-nombre="Limonada Natural" data-precio="3.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <div class="bebida-card">
+                <img src="img/9.jpg" alt="Coca Cola ">
+                <div class="bebida-nombre">Coca Cola 3</div>
+                <div class="bebida-precio">$2.90</div>
+
+                
+                 <div class="agregar-carrito" data-nombre="Coca Cola" data-precio="2.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <div class="bebida-card">
+                <img src="img/10.jpg" alt="Jugo de Naranja">
+                <div class="bebida-nombre">Jugo de Naranja</div>
+                <div class="bebida-precio">$4.50</div>
+
+                 <div class="agregar-carrito" data-nombre="Jugo de Naranja" data-precio="4.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <div class="bebida-card">
+                <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Café Americano">
+                <div class="bebida-nombre">Café Americano</div>
+                <div class="bebida-precio">$2.80</div>
+
+                 <div class="agregar-carrito" data-nombre="Café Americano" data-precio="2.80">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <div class="bebida-card">
+                <img src="https://images.unsplash.com/photo-1517959105821-eaf2591984ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Smoothie de Frutas">
+                <div class="bebida-nombre">Smoothie de Frutas</div>
+                <div class="bebida-precio">$5.90</div>
+
+                 <div class="agregar-carrito" data-nombre="Smoothie de Frutas" data-precio="5.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <div class="bebida-card">
+                <img src="img/20.jpg" alt="Té Helado">
+                <div class="bebida-nombre">Té Helado</div>
+                <div class="bebida-precio">$3.50</div>
+
+                 <div class="agregar-carrito" data-nombre="Té Helado" data-precio="3.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <div class="bebida-card">
+                <img src="img/21.jpg" alt="Cerveza Artesanal">
+                <div class="bebida-nombre">Cerveza Artesanal</div>
+                <div class="bebida-precio">$6.50</div>
+
+                 <div class="agregar-carrito" data-nombre="Cerveza Artesanal" data-precio="6.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <div class="bebida-card">
+                <img src="img/22.jpg" alt="Vino Tinto (Copa)">
+                <div class="bebida-nombre">Vino Tinto </div>
+                <div class="bebida-precio">$7.90</div>
+
+                 <div class="agregar-carrito" data-nombre="Vino Tinto" data-precio="7.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <div class="bebida-card">
+                <img src="img/23.jpg" alt="Batido de Chocolate">
+                <div class="bebida-nombre">Batido de Chocolate</div>
+                <div class="bebida-precio">$5.50</div>
+
+                 <div class="agregar-carrito" data-nombre="Batido de Chocolate" data-precio="5.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+  
+        <!-- NUEVA BEBIDA: Horchata -->
+            <div class="bebida-card">
+                <img src="img/32.jpeg" alt="Horchata">
+                <div class="bebida-nombre">Horchata Fresca</div>
+                <div class="bebida-precio">$3.50</div>
+                <div class="agregar-carrito" data-nombre="Horchata Fresca" data-precio="3.50">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        <path d="M12 8h6"></path>
+                    </svg>
+                    Agregar
+                </div>
+            </div>
+
+            <!-- NUEVA BEBIDA: Michelada -->
+            <div class="bebida-card">
+                <img src="img/31.jpg" alt="Michelada">
+                <div class="bebida-nombre">Michelada Clásica</div>
+                <div class="bebida-precio">$6.90</div>
+                <div class="agregar-carrito" data-nombre="Michelada Clásica"" data-precio="6.90">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        <path d="M12 8h6"></path>
+                    </svg>
+                    Agregar
+                </div>
+            </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    
+</section>
+
+
+
+<!-- Sección de Postres -->
+<!-- === BOTÓN: POSTRES === -->
+<section class="postres-section">
+    <button class="postres-toggle" aria-expanded="false">
+        <h2>Nuestros Postres</h2>
+        <span class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </span>
+    </button>
+
+    <div class="postres-content">
+        <div class="postres-grid">
+
+            <!-- 1 -->
+            <div class="postre-card">
+                <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tiramisú Casero">
+                <div class="postre-nombre">Tiramisú Casero</div>
+                <div class="postre-descripcion">Café, mascarpone, bizcocho y cacao.</div>
+                <div class="postre-precio">$6.90</div>
+
+                                  <div class="agregar-carrito" data-nombre="Tiramisú Casero" data-precio="6.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="postre-card">
+                <img src="img/13.jpg" alt="Cheesecake de Fresa">
+                <div class="postre-nombre">Cheesecake de Fresa</div>
+                <div class="postre-descripcion">Base de galleta, queso crema y mermelada.</div>
+                <div class="postre-precio">$7.50</div>
+
+                <div class="agregar-carrito" data-nombre="Cheesecake de Fresa" data-precio="7.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+                
+            </div>
+
+            <!-- 3 -->
+            <div class="postre-card">
+                <img src="img/4.jpg" alt="Brownie con Helado">
+                <div class="postre-nombre">Brownie con Helado</div>
+                <div class="postre-descripcion">Caliente con helado de vainilla y salsa.</div>
+                <div class="postre-precio">$8.90</div>
+
+                
+                <div class="agregar-carrito" data-nombre="Brownie con Helado" data-precio="8.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="postre-card">
+                <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Flan Casero">
+                <div class="postre-nombre">Flan Casero</div>
+                <div class="postre-descripcion">Huevo, leche condensada y caramelo.</div>
+                <div class="postre-precio">$5.90</div>
+
+                             <div class="agregar-carrito" data-nombre="Flan Casero" data-precio="5.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="postre-card">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Helado Artesanal">
+                <div class="postre-nombre">Helado Artesanal (3 bolas)</div>
+                <div class="postre-descripcion">Vainilla, chocolate y dulce de leche.</div>
+                <div class="postre-precio">$6.50</div>
+
+                             <div class="agregar-carrito" data-nombre="Helado Artesanal (3 bolas)"data-precio="6.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="postre-card">
+                <img src="img/26.jpg" alt="Pastel Tres Leches">
+                <div class="postre-nombre">Pastel Tres Leches</div>
+                <div class="postre-descripcion">Bizcocho empapado, merengue y canela.</div>
+                <div class="postre-precio">$7.90</div>
+
+                             <div class="agregar-carrito" data-nombre="Pastel Tres Leches" data-precio="7.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="postre-card">
+                <img src="img/24.jpg" alt="Profiteroles">
+                <div class="postre-nombre">Profiteroles con Chocolate</div>
+                <div class="postre-descripcion">3 bollitos con crema y salsa caliente.</div>
+                <div class="postre-precio">$8.50</div>
+
+                             <div class="agregar-carrito" data-nombre="Profiteroles con Chocolate" data-precio="8.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="postre-card">
+                <img src="img/25.jpg" alt="Crepas con Nutella">
+                <div class="postre-nombre">Crepas con Nutella y Plátano</div>
+                <div class="postre-descripcion">Crepas finas, Nutella y crema batida.</div>
+                <div class="postre-precio">$7.90</div>
+
+
+                         <div class="agregar-carrito" data-nombre="Crepas con Nutella y Plátano" data-precio="7.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+            <!-- 9 -->
+            <div class="postre-card">
+                <img src="img/27.jpg" alt="Arroz con Leche">
+                <div class="postre-nombre">Arroz con Leche</div>
+                <div class="postre-descripcion">Cremoso con canela y vainilla.</div>
+                <div class="postre-precio">$5.50</div>
+           
+                         <div class="agregar-carrito" data-nombre="Arroz con Leche" data-precio="5.50">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+ </div>
+
+            <!-- 10 -->
+            <div class="postre-card">
+                <img src="img/28.jpg" alt="Milhojas">
+                <div class="postre-nombre">Milhojas de Dulce de Leche</div>
+                <div class="postre-descripcion">Hojaldre, dulce de leche y merengue.</div>
+                <div class="postre-precio">$8.90</div>
+            
+
+                         <div class="agregar-carrito" data-nombre="Milhojas de Dulce de Leche" data-precio="8.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+</div>
+            <!-- 11 -->
+            <div class="postre-card">
+                <img src="img/29.jpg" alt="Soufflé de Chocolate">
+                <div class="postre-nombre">Soufflé de Chocolate</div>
+                <div class="postre-descripcion">Caliente, esponjoso y con centro derretido.</div>
+                <div class="postre-precio">$9.90</div>
+          
+
+                         <div class="agregar-carrito" data-nombre="Soufflé de Chocolate" data-precio="9.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+          </div>
+
+            <!-- 12 -->
+            <div class="postre-card">
+                <img src="img/30.jpg" alt="Tarta de Limón">
+                <div class="postre-nombre">Tarta de Limón</div>
+                <div class="postre-descripcion">Crema de limón y merengue flameado.</div>
+                <div class="postre-precio">$7.90</div>
+
+                             <div class="agregar-carrito" data-nombre="Tarta de Limón" data-precio="7.90">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <path d="M12 8h6"></path>
+        </svg>
+        Agregar
+        </div>
+            </div>
+        </div>
+    </div>
+
+    
+</section>
+
+
+
+
+</main>
+
+<footer>
+    <!-- REDES SOCIALES -->
+    <div class="redes-sociales">
+        <a href="https://facebook.com/turestaurante" target="_blank" class="red-social facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.333v21.334C0 23.403.597 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0 comienzo-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.728 0 1.325-.597 1.325-1.333V1.333C24 .597 23.403 0 22.675 0z"/>
+            </svg>
+        </a>
+        <a href="https://instagram.com/turestaurante" target="_blank" class="red-social instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.696.272 1.273 1.707 1.073 6.052.014 7.333 0 7.741 0 12c0 4.259.014 4.667.072 5.947.2 4.356 1.623 5.78 6.003 5.98C7.333 23.986 7.741 24 12 24c4.259 0 4.667-.014 5.947-.072 4.356-.2 5.78-1.623 5.98-6.003C23.986 16.667 24 16.259 24 12c0-4.259-.014-4.667-.072-5.947-.2-4.356-1.623-5.78-6.003-5.98C16.667.014 16.259 0 12 0z"/>
+                <path d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
+            </svg>
+        </a>
+    
+    </div>
+
+    <!-- GOOGLE MAPS CON IFRAME (SIN API KEY) -->
+    <div class="mapa-container">
+        <h3>Nuestra Ubicación</h3>
+        <iframe 
+            class="mapa-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30274.76311831652!2d-97.4200239!3d18.4680079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5bd4a3c0bb017%3A0x8d70a17688b8cdfa!2sRestaurant%20Las%20Delicias!5e0!3m2!1ses!2smx!4v1761414186470!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <a href="https://www.google.com/maps/dir//Restaurant+Las+Delicias,+Conjunto+Exhacienda,+San+Lorenzo+Teotipilco,+75855+Tehuac%C3%A1n,+Pue./@18.4680079,-97.4200239,14z/data=!4m17!1m8!3m7!1s0x85c5bd4a3c0bb017:0x8d70a17688b8cdfa!2sRestaurant+Las+Delicias!8m2!3d18.4673959!4d-97.4182681!15sChNyZXN0YXVyYW50IGRlbGljaWFzWhUiE3Jlc3RhdXJhbnQgZGVsaWNpYXOSAQpyZXN0YXVyYW50mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJHYlZCNVJFWkJFQUXgAQD6AQQISBAj!16s%2Fg%2F11hbfj9965!4m7!1m0!1m5!1m1!1s0x85c5bd4a3c0bb017:0x8d70a17688b8cdfa!2m2!1d-97.4182525!2d18.4674328?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-como-llegar">
+            Cómo Llegar
+        </a>
+    </div>
+
+    <p>© 2025 Restaurante Delicioso. Todos los derechos reservados.</p>
+</footer>
+
+
+
+
+
+
+
+<script>
+// SLIDER AUTOMÁTICO
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const totalSlides = slides.length;
+
+function mostrarSlide(n) {
+    slideIndex = (n + totalSlides) % totalSlides;
+    document.querySelector('.slider').style.transform = `translateX(-${slideIndex * 100}%)`;
+    
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[slideIndex].classList.add('active');
+}
+
+function cambiarSlide(n) {
+    mostrarSlide(slideIndex + n);
+}
+
+function irASlide(n) {
+    mostrarSlide(n);
+}
+
+// Auto-play
+let autoSlide = setInterval(() => cambiarSlide(1), 4000);
+
+// Pausar al pasar el mouse
+document.querySelector('.slider-container').addEventListener('mouseenter', () => {
+    clearInterval(autoSlide);
+});
+
+document.querySelector('.slider-container').addEventListener('mouseleave', () => {
+    autoSlide = setInterval(() => cambiarSlide(1), 4000);
+});
+
+// Inicializar
+mostrarSlide(0);
+</script>
+
+
+
+<script>
+// Cargar Google Maps
+function initMap() {
+    const ubicacion = { lat: 19.432608, lng: -99.133209 }; // CAMBIA A TU UBICACIÓN
+
+    const mapa = new google.maps.Map(document.getElementById("mapa"), {
+        zoom: 16,
+        center: ubicacion,
+        styles: [
+            { elementType: "geometry", stylers: [{ color: "#fff8e1" }] },
+            { elementType: "labels.text.stroke", stylers: [{ color: "#fff8e1" }] },
+            { elementType: "labels.text.fill", stylers: [{ color: "#f39c12" }] },
+            {
+                featureType: "road",
+                element经Type: "geometry",
+                stylers: [{ color: "#f1c40f" }]
+            },
+            {
+                featureType: "poi",
+                elementType: "labels",
+                stylers: [{ visibility: "off" }]
+            }
+        ]
+    });
+
+    new google.maps.Marker({
+        position: ubicacion,
+        map: mapa,
+        title: "Restaurante Delicioso",
+        icon: {
+            url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(`
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#e67e22" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+            `),
+            scaledSize: new google.maps.Size(40, 40)
+        }
+    });
+}
+</script>
+
+<!-- Cargar API de Google Maps -->
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY_AQUI&callback=initMap">
+</script>
+
+
+    <script>
+    document.querySelector('.postres-toggle').addEventListener('click', function() {
+        const content = this.nextElementSibling;
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        content.classList.toggle('open');
+    });
+</script>
+<script>
+    document.querySelector('.bebidas-toggle').addEventListener('click', function() {
+        const content = this.nextElementSibling;
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        content.classList.toggle('open');
+    });
+</script>
+<script>
+    document.querySelector('.rapidos-toggle').addEventListener('click', function() {
+        const content = this.nextElementSibling;
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        content.classList.toggle('open');
+    });
+</script>
+
+
+
+<script>
+    // Menú principal
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        const content = this.nextElementSibling;
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        content.classList.toggle('open');
+    });
+
+    // Días individuales
+    document.querySelectorAll('.acordeon-header').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', !expanded);
+            content.classList.toggle('open');
+        });
+    });
+
+    // === MENÚ DIARIO: Solo un día abierto ===
+document.addEventListener('DOMContentLoaded', () => {
+    const dayToggles = document.querySelectorAll('.day-toggle');
+    const dayContents = document.querySelectorAll('.day-content');
+
+    // Cerrar todos los días
+    const closeAllDays = () => {
+        dayContents.forEach(content => {
+            content.style.maxHeight = null;
+            content.classList.remove('open');
+        });
+        dayToggles.forEach(toggle => {
+            toggle.classList.remove('active');
+            toggle.querySelector('svg').style.transform = 'rotate(0deg)';
+        });
+    };
+
+    // Abrir un día y cerrar los demás
+    dayToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const day = toggle.parentElement.getAttribute('data-day');
+            const content = toggle.nextElementSibling;
+            const isOpen = content.classList.contains('open');
+
+            // 1. Cerrar TODOS
+            closeAllDays();
+
+            // 2. Si no estaba abierto, abrir este
+            if (!isOpen) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.classList.add('open');
+                toggle.classList.add('active');
+                toggle.querySelector('svg').style.transform = 'rotate(180deg)';
+            }
+        });
+    });
+
+    // Opcional: Cerrar al hacer clic fuera
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.menu-day')) {
+            closeAllDays();
+        }
+    });
+});
+</script>
+
+
+<div id="modal-bebidas" class="modal">
+    <div class="modal-content">
+        <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+        <h4 id="nombre-bebida-modal"></h4>
+        <p id="descripcion-bebida-modal"></p>
+        <button class="opcion-bebida" onclick="agregarBebidaSeleccionada('vaso')">
+            Por Vaso - $<span id="precio-vaso"></span>
+        </button>
+        <button class="opcion-bebida" onclick="agregarBebidaSeleccionada('litro')">
+            Por Litro - $<span id="precio-litro"></span>
+        </button>
+    </div>
+</div>
+
+
+<!-- CARRITO FLOTANTE -->
+<div class="carrito-flotante">
+    <div class="carrito-header" id="carrito-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></cart>
+        </svg>
+        <span class="carrito-contador">0</span>
+    </div>
+    <div class="carrito-contenido" id="carrito-contenido">
+        <h3>Tu Pedido</h3>
+        <div class="carrito-items"></div>
+        <div class="carrito-total">
+            <strong>Total: $<span id="total">0.00</span></strong>
+        </div>
+        <button class="btn-pedir" id="btn-pedir">
+            Enviar Pedido por WhatsApp
+        </button>
+    </div>
+</div>
+
+
+<script>
+
+    // ABRIR/CERRAR CARRITO FLOTANTE (¡ESTO FALTABA!)
+document.getElementById('carrito-header').addEventListener('click', () => {
+    document.getElementById('carrito-contenido').classList.toggle('open');
+});
+// VARIABLES GLOBALES PARA MODAL
+let bebidaActual = { nombre: '', precio: 0, descripcion: '' };
+
+// Abrir/Cerrar carrito (sin cambios)
+document.getElementById('carrito-header').addEventListener('click', () => {
+    document.getElementById('carrito-contenido').classList.toggle('open');
+});
+
+// FUNCIÓN PARA BEBIDAS: Abrir modal al clic
+document.querySelectorAll('.bebida-card .agregar-carrito').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const nombre = btn.dataset.nombre;
+        const precio = parseFloat(btn.dataset.precio);
+        const descripcion = btn.closest('.bebida-card').querySelector('.bebida-descripcion')?.textContent || '';
+
+        // Guardar datos actuales
+        bebidaActual = { nombre, precio, descripcion };
+
+        // Mostrar modal
+        document.getElementById('modal-bebidas').style.display = 'block';
+        document.getElementById('nombre-bebida-modal').textContent = nombre;
+        document.getElementById('descripcion-bebida-modal').textContent = descripcion;
+        document.getElementById('precio-vaso').textContent = precio.toFixed(2);
+        document.getElementById('precio-litro').textContent = (precio * 4).toFixed(2);
+    });
+});
+
+// FUNCIÓN: Agregar bebida seleccionada al carrito
+function agregarBebidaSeleccionada(tipo) {
+    let nombreFinal = bebidaActual.nombre;
+    let precioFinal = bebidaActual.precio;
+
+    if (tipo === 'litro') {
+        nombreFinal += ' (1 litro)';
+        precioFinal *= 4;
+    } else {
+        nombreFinal += ' (1 vaso)';
+    }
+
+    const item = carrito.find(i => i.nombre === nombreFinal);
+    if (item) {
+        item.cantidad++;
+    } else {
+        carrito.push({ nombre: nombreFinal, precio: precioFinal, cantidad: 1 });
+    }
+
+    actualizarCarrito();
+    cerrarModal();
+}
+
+// FUNCIÓN: Cerrar modal
+function cerrarModal() {
+    document.getElementById('modal-bebidas').style.display = 'none';
+}
+
+// CERRAR MODAL AL CLIC FUERA
+window.onclick = function(event) {
+    const modal = document.getElementById('modal-bebidas');
+    if (event.target === modal) {
+        cerrarModal();
+    }
+}
+
+// AGREGAR PLATOS/POSTRES/RÁPIDOS (sin cambios, solo para no bebidas)
+document.querySelectorAll('.agregar-carrito:not(.bebida-card .agregar-carrito)').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const nombre = btn.dataset.nombre;
+        const precio = parseFloat(btn.dataset.precio);
+
+        const item = carrito.find(i => i.nombre === nombre);
+        if (item) {
+            item.cantidad++;
+        } else {
+            carrito.push({ nombre, precio, cantidad: 1 });
+        }
+
+        actualizarCarrito();
+    });
+});
+
+// FUNCIÓN actualizarCarrito (sin cambios)
+function actualizarCarrito() {
+    const itemsContainer = document.querySelector('.carrito-items');
+    const totalElement = document.getElementById('total');
+    const contador = document.querySelector('.carrito-contador');
+
+    itemsContainer.innerHTML = '';
+    let total = 0;
+
+    carrito.forEach((item, index) => {
+        total += item.precio * item.cantidad;
+
+        const div = document.createElement('div');
+        div.className = 'carrito-item';
+        div.innerHTML = `
+            <span><strong>${item.cantidad}x</strong> ${item.nombre}</span>
+            <span>
+                $${(item.precio * item.cantidad).toFixed(2)}
+                <span class="eliminar" onclick="eliminarDelCarrito(${index})">X</span>
+            </span>
+        `;
+        itemsContainer.appendChild(div);
+    });
+
+    totalElement.textContent = total.toFixed(2);
+    contador.textContent = carrito.reduce((sum, i) => sum + i.cantidad, 0);
+}
+
+// FUNCIÓN eliminarDelCarrito (sin cambios)
+function eliminarDelCarrito(index) {
+    if (carrito[index].cantidad > 1) {
+        carrito[index].cantidad--;
+    } else {
+        carrito.splice(index, 1);
+    }
+    actualizarCarrito();
+}
+
+// Enviar por WhatsApp (sin cambios)
+document.getElementById('btn-pedir').addEventListener('click', () => {
+    if (carrito.length === 0) {
+        alert('Tu carrito está vacío');
+        return;
+    }
+
+    let mensaje = "*PEDIDO A DOMICILIO - Restaurante Delicioso*\n\n";
+    let total = 0;
+
+    carrito.forEach(item => {
+        const subtotal = item.precio * item.cantidad;
+        total += subtotal;
+        mensaje += `${item.cantidad}x ${item.nombre} - $${subtotal.toFixed(2)}\n`;
+    });
+
+    mensaje += `\n*Total: $${total.toFixed(2)}*`;
+    mensaje += `\n\nPor favor confirma disponibilidad y dirección.`;
+
+    const numeroWhatsApp = "5211234567890"; // CAMBIA POR TU NÚMERO
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
+});
+</script>
+
+<script>
+let carrito = [];
+const numeroWhatsApp = "5211234567890"; // CAMBIA POR TU NÚMERO
+
+// Abrir/Cerrar carrito
+document.getElementById('carrito-header').addEventListener('click', () => {
+    document.getElementById('carrito-contenido').classList.toggle('open');
+});
+
+
+function actualizarCarrito() {
+    const itemsContainer = document.querySelector('.carrito-items');
+    const totalElement = document.getElementById('total');
+    const contador = document.querySelector('.carrito-contador');
+
+    itemsContainer.innerHTML = '';
+    let total = 0;
+
+    carrito.forEach((item, index) => {
+        total += item.precio * item.cantidad;
+
+        const div = document.createElement('div');
+        div.className = 'carrito-item';
+        div.innerHTML = `
+            <span><strong>${item.cantidad}x</strong> ${item.nombre}</span>
+            <span>
+                $${(item.precio * item.cantidad).toFixed(2)}
+                <span class="eliminar" onclick="eliminarDelCarrito(${index})">X</span>
+            </span>
+        `;
+        itemsContainer.appendChild(div);
+    });
+
+    totalElement.textContent = total.toFixed(2);
+    contador.textContent = carrito.reduce((sum, i) => sum + i.cantidad, 0);
+}
+
+function eliminarDelCarrito(index) {
+    if (carrito[index].cantidad > 1) {
+        carrito[index].cantidad--;
+    } else {
+        carrito.splice(index, 1);
+    }
+    actualizarCarrito();
+}
+
+// Enviar por WhatsApp
+document.getElementById('btn-pedir').addEventListener('click', () => {
+    if (carrito.length === 0) {
+        alert('Tu carrito está vacío');
+        return;
+    }
+
+    let mensaje = "*PEDIDO A DOMICILIO - Restaurante Delicioso*\n\n";
+    let total = 0;
+
+    carrito.forEach(item => {
+        const subtotal = item.precio * item.cantidad;
+        total += subtotal;
+        mensaje += `${item.cantidad}x ${item.nombre} - $${subtotal.toFixed(2)}\n`;
+    });
+
+    mensaje += `\n*Total: $${total.toFixed(2)}*`;
+    mensaje += `\n\nPor favor confirma disponibilidad y dirección.`;
+
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
+});
+</script>
+
+<!-- MODAL PARA BEBIDAS -->
+<div id="modal-bebidas" class="modal">
+    <div class="modal-content">
+        <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+        <h4 id="nombre-bebida-modal"></h4>
+        <p id="descripcion-bebida-modal"></p>
+        <button class="opcion-bebida" onclick="agregarBebidaSeleccionada('vaso')">
+            Por Vaso - $<span id="precio-vaso"></span>
+        </button>
+        <button class="opcion-bebida" onclick="agregarBebidaSeleccionada('litro')">
+            Por Litro - $<span id="precio-litro"></span>
+        </button>
+    </div>
+</div>
+
+
+</body>
+</html>
